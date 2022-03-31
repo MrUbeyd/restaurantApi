@@ -1,7 +1,8 @@
 # Restaurant Api 
 
 This API serves to bring the first 5 restaurants with a maximum distance of 10 km from the restaurant network to the customer.
-###How it works?
+
+### How it works?
 
 - First, data is entered into the local database created with Sqlite3 on the lines that have been commented out.
 - Distance function calculates the distance between the customer location and any specified location.

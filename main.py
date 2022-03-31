@@ -45,7 +45,7 @@ def findFirst5Restaurant():
     cur = con.cursor()
     restaurantsMin = []
     for row in cur.execute('SELECT name,latitude,longtitude FROM restaurant_branches'):
-        distBetween = distance(row[1], row[2])
+        distBetween = round(distance(row[1], row[2]),2)
         if (distBetween <= 10): # max 10km from customer
             restaurantsMin.append([row[0], distBetween])
 
